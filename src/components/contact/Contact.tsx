@@ -39,7 +39,7 @@ const Contact = () => {
     if (!subject) return setErrMsg('Please provide a Subject!');
     if (!message) return setErrMsg('Message is required!');
 
-    await sendEmail(formData);
+    await sendEmail(e.currentTarget);
     setSuccessMsg(`Thank you, ${username}. Your message has been sent successfully!`);
     setErrMsg('');
     setFormData({ username: '', phoneNumber: '', email: '', subject: '', message: '' });

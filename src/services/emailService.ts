@@ -1,12 +1,15 @@
 import emailjs from "@emailjs/browser";
-import { FormData } from "../types/contact";
 
-export const sendEmail = async (formData: FormData) => {
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID as string;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY as string;
+
+export const sendEmail = async (form: HTMLFormElement) => {
     emailjs.sendForm(
-      "YOUR_SERVICE_ID", // Replace with your EmailJS Service ID
-      "YOUR_TEMPLATE_ID", // Replace with your EmailJS Template ID
-      formData.message,
-      "YOUR_PUBLIC_KEY" // Replace with your EmailJS Public Key
+      serviceId,
+      templateId,
+      form,
+      publicKey
     )
     .then(
       () => {},
