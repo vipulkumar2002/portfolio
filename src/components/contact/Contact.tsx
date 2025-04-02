@@ -17,7 +17,6 @@ const Contact = () => {
   const [successMsg, setSuccessMsg] = useState("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    e.preventDefault();
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -80,6 +79,7 @@ const Contact = () => {
                       "outline-designColor"
                       } contactInput`}
                     type="text"
+                    name='username'
                   />
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
@@ -92,7 +92,10 @@ const Contact = () => {
                     className={`${errMsg === "Phone number is required!" &&
                       "outline-designColor"
                       } contactInput`}
-                    type="text"
+                    type="number"
+                    name='phoneNumber'
+                    min={10}
+                    max={10}
                   />
                 </div>
               </div>
@@ -107,6 +110,7 @@ const Contact = () => {
                     "outline-designColor"
                     } contactInput`}
                   type="email"
+                  name='email'
                 />
               </div>
               <div className="flex flex-col gap-4">
@@ -120,6 +124,7 @@ const Contact = () => {
                     "outline-designColor"
                     } contactInput`}
                   type="text"
+                  name='subject'
                 />
               </div>
               <div className="flex flex-col gap-4">
@@ -133,6 +138,7 @@ const Contact = () => {
                     } contactTextArea`}
                   cols={30}
                   rows={8}
+                  name='message'
                 ></textarea>
               </div>
               <div className="w-full">
