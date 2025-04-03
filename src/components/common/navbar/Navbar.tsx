@@ -7,7 +7,7 @@ import { navItems } from '../../../constants/navbarItems';
 import SocialMedia from '../socialMedia/SocialMedia';
 
 const Navbar = () => {
-  const [showMenu, setShowMenu]=useState(false)
+  const [showMenu, setShowMenu] = useState(false)
 
   return (
     <div className="navbarComponent w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
@@ -46,9 +46,7 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  As a seasoned Software Engineer, I specialize in full-stack development with expertise in JavaScript, React.js, and Node.js. I thrive in cross-functional teams, building scalable applications with Redux, Redux Toolkit, and GraphQL for efficient client-server communication. Passionate about innovation and technology, I'm eager to contribute to impactful projects. Let’s connect and build something great together!
                 </p>
               </div>
               <ul className="flex flex-col gap-4">

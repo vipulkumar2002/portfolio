@@ -15,16 +15,16 @@ const ContactLeft = () => {
           MERN Stack Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          ipsam autem cumque, accusantium dicta odio.
+          As a seasoned Software Engineer, I specialize in full-stack development with expertise in JavaScript, React.js, and Node.js. I thrive in cross-functional teams, building scalable applications with Redux, Redux Toolkit, and GraphQL for efficient client-server communication. Passionate about innovation and technology, I'm eager to contribute to impactful projects.
+          Let’s connect and build something great together!
         </p>
         <div>
-        <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+91 7415384611</span>
-        </p>
-        <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">vipulkumarpatel2002@gmail.com</span>
-        </p>
+          <p className="text-base text-gray-400 flex items-center gap-2">
+            Phone: <span className="text-lightText">+91 7415384611</span>
+          </p>
+          <p className="text-base text-gray-400 flex items-center gap-2">
+            Email: <span className="text-lightText">vipulkumarpatel2002@gmail.com</span>
+          </p>
         </div>
       </div>
       <div className="flex flex-col gap-4">
