@@ -3,7 +3,7 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 
 const ContactLeft = () => {
   return (
-    <div className="contactLeftComponent w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
+    <div className="contactLeftComponent w-full lgl:w-[40%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-4 lgl:p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
       <img
         className="w-full h-64 object-cover rounded-lg mb-2"
         src={contactImg}
@@ -15,8 +15,7 @@ const ContactLeft = () => {
           MERN Stack Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          As a seasoned Software Engineer, I specialize in full-stack development with expertise in JavaScript, React.js, and Node.js. I thrive in cross-functional teams, building scalable applications with Redux, Redux Toolkit, and GraphQL for efficient client-server communication. Passionate about innovation and technology, I'm eager to contribute to impactful projects.
-          Let’s connect and build something great together!
+          Engineer With experience in developing scalable applications and optimizing performance, I focus on delivering seamless user experiences. I thrive in cross-functional teams, building scalable applications for efficient client-server communication. Passionate about innovation and technology, I'm eager to contribute to impactful projects. Let’s connect and build something great together!
         </p>
         <div>
           <p className="text-base text-gray-400 flex items-center gap-2">

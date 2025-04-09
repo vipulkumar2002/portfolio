@@ -42,10 +42,10 @@ const Navbar = () => {
         </span>
         {showMenu && (
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
-            <div className="flex flex-col gap-8 py-2 relative">
+            <div className="flex flex-col gap-7 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
+                <img className='w-28' src={logo} alt="logo" />
+                <p className="text-sm text-gray-400 mt-1">
                   As a seasoned Software Engineer, I specialize in full-stack development with expertise in JavaScript, React.js, and Node.js. I thrive in cross-functional teams, building scalable applications with Redux, Redux Toolkit, and GraphQL for efficient client-server communication. Passionate about innovation and technology, I'm eager to contribute to impactful projects. Let’s connect and build something great together!
                 </p>
               </div>

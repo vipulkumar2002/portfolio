@@ -1,6 +1,6 @@
 import Title from "../layouts/Title";
 import Card from "./Card";
-import { featuresData } from "../../data/data";
+import { featuresData } from "../../data/feature";
 
 const Features = () => {
   return (

@@ -1,5 +1,4 @@
-import { FaReact, FaBootstrap, FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiTailwindcss, SiRedux, SiTypescript, SiJavascript, SiAngular } from "react-icons/si";
+import { skills } from "../../data/skills";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 
 const Media = () => {
@@ -16,33 +15,16 @@ const Media = () => {
           BEST SKILL ON
         </h2>
         <div className="flex gap-4 flex-wrap">
-          <span className="bannerIcon" data-toggle="tooltip" title="Javascript">
-            <SiJavascript />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="React">
-            <FaReact />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Redux">
-            <SiRedux />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Css 3">
-            <SiAngular />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Typescript">
-            <SiTypescript />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Tailwind css">
-            <SiTailwindcss />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Bootstrap">
-            <FaBootstrap />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Html 5">
-            <FaHtml5 />
-          </span>
-          <span className="bannerIcon" data-toggle="tooltip" title="Css 3">
-            <FaCss3 />
-          </span>
+          {skills.map((skill, index) => (
+            <span
+              key={index}
+              className="bannerIcon"
+              data-toggle="tooltip"
+              title={skill.title}
+            >
+              {skill.icon}
+            </span>
+          ))}
         </div>
       </div>
     </div>
